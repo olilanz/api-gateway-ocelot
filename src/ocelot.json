@@ -1,1 +1,18 @@
-﻿
+﻿{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/{url}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "someaddr",
+          "Port": 8123
+        }
+      ],
+      "UpstreamPathTemplate": "/{url}"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7000"
+  }
+}
